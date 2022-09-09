@@ -1,0 +1,64 @@
+
+.footer-container{
+    background-color: black;
+}
+
+.footer-grid{
+    @include flex (flex, center);
+    width: 100%;
+
+    @media only screen and (max-width: 991px){
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    div{
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+.redes a img:hover{
+    transform: scale(1.13);
+    transition: 0.3s;
+} 
+
+.redes{
+    @include flex (flex, flex-end);
+    padding-right: 40px;
+
+    @media only screen and (max-width: 991px){
+        @include flex (flex, center);
+        padding: 0px;
+    }
+}
+
+.logoalternativo{
+    @include flex (flex, center);
+    img{
+        width: 98px;
+        @media only screen and (max-width: 991px){
+            width: 85px;
+            margin: 22px 0px 15px 0;
+        }
+    }
+}
+
+.ubicacion{
+    @include flex (flex, flex-start);
+    padding-left: 40px;
+
+    @media only screen and (max-width: 991px){
+        @include flex (flex, center);
+        padding: 0px;
+    }
+}
+
+.p-ubicacion{
+    font-family: $font-textos;
+    font-size: 18px;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 0px;
+}

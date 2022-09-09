@@ -1,0 +1,28 @@
+/* tipografias */
+@import url('https://fonts.googleapis.com/css2? family= Roboto:wght@300 & display=swap');
+/* familia tipográfica: 'Roboto', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+/* familia tipográfica: 'Staatliches', cursive; */
+
+/* Imports archivos */
+@import 'base/variables';
+@import 'base/extends';
+@import 'base/mixins';
+@import 'base/mapas';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/inicio';
+@import 'components/personalizados';
+@import 'components/nosotros';
+@import 'components/catalogo';
+@import 'components/contacto';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.disclaimer{
+    display: none;
+}
